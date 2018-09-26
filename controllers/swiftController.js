@@ -6,7 +6,7 @@ const path = require("path");
 
 const orm = require("../config/orm.js");
 
-router.get("/login", function (req, res) {
+router.get("/", function (req, res) {
 
   res.sendFile(path.join(__dirname, '../public/login.html'));
 });
