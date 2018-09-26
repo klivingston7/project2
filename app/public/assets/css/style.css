@@ -1,0 +1,269 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    text-decoration: none !important;
+}
+
+.backstretch { 
+    opacity: .3;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+.mainImg {
+    max-width: 700px;
+    max-height: 450px;
+}
+.headerImg {
+    max-height: 40px;
+    padding-right: 15px;
+}
+
+/*  Header  */
+h5 {
+    letter-spacing: 3px;
+    font-size: 1.75rem !important;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.headLink{
+    text-decoration: none !important;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+.headLink:hover{
+    color: #5f5e5e;
+}
+#contact{
+    text-decoration: none !important;
+    color: #355761;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+#contact:hover{
+    color: #628895;
+}
+.cartImg {
+    max-height: 35px;
+}
+.cartImg:hover {
+    transform: scale(1.1);
+}
+.cart{
+    text-decoration: none !important;
+    color: #3e6875;
+    font-weight: 500;
+}
+.cart:hover {
+    color: #628895;
+}
+
+#productPic {
+    float: right !important;
+    width: 125px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 23rem;
+    background-color: #93b0b99d;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  .first-slide, .second-slide, .third-slide {
+    opacity: .25;
+  }
+  .car-Btn {
+    padding: 18px, 30px;
+    font-family: 'Open Sans', sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+    border: 2px solid #628895;
+    text-decoration: none;
+    background-color: #628895;
+    color: #FFF;
+    margin-top: 12px;
+    }
+    .car-Btn:hover {
+    border: 2px solid #628895;
+    border: 2px solid #3e6875;
+    background-color: transparent;
+    color: #3e6875;
+    }
+
+/*  Columns  */
+.colHead {
+    margin-top: 0px !important;
+}
+.colOver {
+    position: relative;
+  }
+  .columnImg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #628895;
+  }
+  
+  .colOver:hover .overlay {
+    opacity: .9;
+  }
+  
+  .text {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+  }
+  .col-Btn {
+    padding: 18px, 30px;
+    font-family: 'Open Sans', sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+    border: 2px solid #3e6875;
+    text-decoration: none;
+    color: #3e6875;
+    background-color: transparent;
+    margin-top: 12px;
+    }
+    .col-Btn:hover {
+    border: 2px solid #628895;
+    background-color: #628895;
+    color: #FFF;
+    }
+
+/*  Survey  */
+.headContent {
+    letter-spacing: 1px;
+    font-size: 11px;
+    color: #4f7f8f;
+}
+.headContent:hover {
+    color: #79a4b3;
+    text-decoration: none;
+}
+
+h3 {
+    margin-top: 21px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 350;
+    margin-bottom: 21px;
+}
+
+h4 {
+    margin-top: 21px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300;
+    margin-bottom: 21px;
+}
+
+/* Footers */
+
+footer {
+    margin-top: 75px;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+.surFooter {
+    margin-top: 25px;
+}
+
+.footContent {
+    color: #4f7f8f;
+}
+.footContent:hover {
+    color: #79a4b3;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    .mainH2 {
+        font-size: 17px;
+    }
+    .mainImg {
+        max-width: 400px
+    }
+    #matchImg {
+        width: 300px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .mainH2 {
+        font-size: 15px;
+    }
+    .mainImg {
+        max-width: 300px;
+    }
+    #matchImg {
+        width: 200px;
+    }
+    .headLink {
+        font-size: 11px;
+    }
+    #contact {
+        font-size: 11px;
+    }
+    .cart {
+        font-size: 11px;
+    }
+    .carCap{
+        font-size: .9rem;
+    }
+    .cartImg {
+       max-height: 23px;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    .carousel-caption {
+        padding-bottom: 15px;
+    }
+  }

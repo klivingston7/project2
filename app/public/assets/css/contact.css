@@ -1,0 +1,68 @@
+.row {
+    clear: both;
+    overflow: auto;
+    box-sizing: content-box;
+    padding: 0 10px 0 10px;
+    padding-top: 0px;
+    margin: 0 10px 0 10px;
+}
+
+.col-sm-12 {
+    padding: 0 10px 0 10px;
+}
+
+div.form-group {
+    width: 100%;
+}
+
+div.form-text {
+    width: 100%
+}
+
+label.control-label.col-sm-12 {
+    padding: 0;
+}
+
+#fname, #email, #message {
+    padding: 0;
+}
+
+#Fname, #Email {
+    width: 100%;
+    border: 1px solid #dddddd;
+    line-height: 28px;
+    font-size: 13px;
+    text-indent: 6px;
+    cursor: text;
+}
+
+#Message {
+    width: 100%;
+    border: 1px solid #dddddd;
+    font-size: 13px;
+    text-indent: 6px;
+}
+
+textarea#Message{
+    height: 200px;
+}
+
+#Fname:focus {
+    border-color: #3e6875;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px #537480, 0 0 8px #628895;
+    box-shadow: inset 0 1px 1px #537480, 0 0 8px #628895;
+  }  
+
+#Email:focus {
+    border-color: #3e6875;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px #537480, 0 0 8px #628895;
+    box-shadow: inset 0 1px 1px #537480, 0 0 8px #628895;
+  }  
+#Message:focus {
+    border-color: #3e6875;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px #537480, 0 0 8px #628895;
+    box-shadow: inset 0 1px 1px #537480, 0 0 8px #628895;
+  }  
