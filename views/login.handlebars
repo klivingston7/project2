@@ -1,0 +1,99 @@
+<link type="text/css" rel="stylesheet" href="/assets/css/login.css">
+<style>
+  .header{
+    display: none !important;
+  }
+</style>
+
+<body>
+  <div class="container text-center">
+    <h2><img class="mainImg" src="/assets/media/CSB.png" alt=""></h2>
+    <div class="form">
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="signup">
+          <h1>Sign Up for Free</h1>
+
+          <form action="/" method="post">
+            <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  First Name
+                </label>
+                <input type="text" required autocomplete="off" />
+              </div>
+
+              <div class="field-wrap">
+                <label>
+                  Last Name
+                </label>
+                <input type="text" required autocomplete="off" />
+              </div>
+            </div>
+
+            <div class="field-wrap">
+              <label>
+                Email Address
+              </label>
+              <input type="email" required autocomplete="off" />
+            </div>
+
+            <div class="field-wrap">
+              <label>
+                Set A Password
+              </label>
+              <input type="password" required autocomplete="off" />
+            </div>
+
+            <button type="submit" class="button btn-block signIn-btn signIn-MAIN">Get Started</button>
+          </form>
+        </div>
+        <div id="login">
+          <h1>Welcome Back!</h1>
+
+          <form action="/" method="post">
+            <div class="field-wrap">
+              <label>
+                Email Address
+              </label>
+              <input type="email" required autocomplete="off" />
+            </div>
+
+            <div class="field-wrap">
+              <label>
+                Password
+              </label>
+              <input type="password" required autocomplete="off" />
+            </div>
+
+            <button class="button btn-block signIn-btn signIn-MAIN">Log In</button>
+            <br>
+            <div class="text-center OR">
+              <p> OR </p>
+            </div>
+            <!--Facebook-->
+            <button type="button" class="btn btn-fb signIn-btn" id="signIn-FB"><i class="fa fa-facebook"></i>
+            </button>
+            <!--Twitter-->
+            <button type="button" class="btn btn-tw signIn-btn" id="signIn-TW"><i class="fa fa-twitter"></i>
+            </button>
+            <!--Google-->
+            <button type="button" class="btn btn-google signIn-btn" id="signIn-GM"><i class="fa fa-google"></i>
+            </button>
+            <!--Instagram-->
+            <button type="button" class="btn btn-ins signIn-btn" id="signIn-IG"><i class="fa fa-instagram"></i>
+            </button>
+          </form>
+        </div>
+      </div><!-- tab-content -->
+    </div> <!-- form -->
+  </div>
+
+</body>
+<script type="text/javascript" src="/assets/js/login.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
+<script> $("body").backstretch("/assets/media/aromaBR.jpg");</script>
+

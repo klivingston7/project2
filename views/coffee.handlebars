@@ -1,0 +1,85 @@
+<link type="text/css" rel="stylesheet" href="/assets/css/style.css">
+
+<body>
+    <div class="container">
+        <header class="">
+            <h1>Coffee</h1>
+        </header>
+        <hr>
+        <div class="dropdown show">
+            <a class="btn car-Btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Menu
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="/menu/coffee">Coffee</a>
+                <a class="dropdown-item" href="/menu/frappucino">Frappucino</a>
+                <a class="dropdown-item" href="/menu/tea">Tea</a>
+                <a class="dropdown-item" href="/menu/bakery">Bakery</a>
+            </div>
+        </div>
+        <br>
+     <div class="row">
+         {{#each coffeeMenu}}
+            <div class="col-sm-6" style="margin-bottom: 15px;">
+                <div class="card">
+                    <div class="card-body">
+                       <h2 class="product-title">{{this.product_name}}</h2> <img id="productPic" src={{this.product_picture}}>
+        
+                            <p class="tile-title">{{this.product_type}} {{product_category}}</p>
+
+                        <!-- Table -->
+                        <table class="table text-center">
+                            <tr>
+                                <th>Small <small>(cal)</small></th>
+                                <th>Medium <small>(cal)</small></th>
+                                <th>Large <small>(cal)</small></th>
+                            </tr>
+                            <tr>
+                                <td>${{this.social}} <small>({{this.socialCal}})</small></td>
+                                <td>${{this.daily}} <small>({{this.dailyCal}})</small></td>
+                                <td>${{this.kick}} <small>({{this.kickCal}})</small></td>
+                            </tr>
+                        </table>
+                        <div class="btn-group">
+                            <button type="button" class="btn car-Btn dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span id="selected">Size</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu size">
+                                <li><a class="dropdown-item" href="#">Small</a></li>
+                                <li><a class="dropdown-item" href="#">Medium</a></li>
+                                <li><a class="dropdown-item" href="#">Large</a></li>
+                            </ul>
+                        </div>
+                        <a href="/cart/" class="btn col-Btn" id="to-cart" role="button">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            {{/each}}
+        </div>
+<script>
+    var size = "small";
+    var oldUrl = $("#to-cart").attr('href');
+    $('#to-cart').attr('href', oldUrl + "/" + size);
+
+    $('.size li > a').click(function () {
+        size = $(this).text().toLowerCase();
+        $('#selected').text($(this).text());
+        $('#to-cart').attr('href', oldUrl + "/" + size);
+    });
+
+    $('#to-cart').click(function () {
+        var oldUrl = this.attr('href');
+        this.attr('href', oldUrl + size);
+    })
+
+    $(".btn .btn-primary").click(function () {
+        alert("clicked!")
+    })
+
+
+</script>
