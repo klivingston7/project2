@@ -41,12 +41,8 @@ router.get("/menu", function (req, res) {
   res.render("menu");
 });
 
-router.get("/menuitems", function (req, res) {
 
-  res.render("menuitems");
-});
-
-router.get("/menu/coffee", function (req, res) {
+router.get("/coffee", function (req, res) {
   orm.all("coffee", function (results) {
     console.log(results);
     res.render("coffee", {
@@ -55,7 +51,7 @@ router.get("/menu/coffee", function (req, res) {
   })
 });
 
-router.get("/menu/frappucino", function (req, res) {
+router.get("/frappucino", function (req, res) {
   orm.all("frappucino", function (results) {
     console.log(results);
     res.render("frappucino", {
@@ -64,7 +60,7 @@ router.get("/menu/frappucino", function (req, res) {
   })
 });
 
-router.get("/menu/tea", function (req, res) {
+router.get("/tea", function (req, res) {
   orm.all("tea", function (results) {
     console.log(results);
     res.render("tea", {
@@ -73,7 +69,7 @@ router.get("/menu/tea", function (req, res) {
   })
 });
 
-router.get("/menu/bakery", function (req, res) {
+router.get("/bakery", function (req, res) {
   orm.all("bakery", function (results) {
     console.log(results);
     res.render("bakery", {
